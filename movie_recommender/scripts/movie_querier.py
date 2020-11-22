@@ -31,7 +31,7 @@ def get_name_movie(queried_movie_name, train_movies_1d,movie_type):
 		url = "https://movie-database-imdb-alternative.p.rapidapi.com/"
 		headers = {
 		'x-rapidapi-host': "movie-database-imdb-alternative.p.rapidapi.com",
-		'x-rapidapi-key': "ce15ebaf8dmshfb3801d1cfa22dcp1f4c05jsn1dad2b361974"
+		'x-rapidapi-key': "#"
 		}
 		querystring = {"i": f"{movie_id}", "r": "json",'type':type_}
 		response = requests.request("GET", url, headers=headers, params=querystring)
@@ -41,7 +41,7 @@ def get_name_movie(queried_movie_name, train_movies_1d,movie_type):
 		url = "https://movie-database-imdb-alternative.p.rapidapi.com/"
 		headers = {
 		    'x-rapidapi-host': "movie-database-imdb-alternative.p.rapidapi.com",
-		    'x-rapidapi-key': "ce15ebaf8dmshfb3801d1cfa22dcp1f4c05jsn1dad2b361974"
+		    'x-rapidapi-key': "#"
 		    }
 		querystring = {"page":"1","r":"json","s":f"{m_name}",'type':type_}
 		response = requests.request("GET", url, headers=headers, params=querystring)
